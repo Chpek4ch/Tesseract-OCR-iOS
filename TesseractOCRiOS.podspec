@@ -24,15 +24,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target      = '8.0'
   s.ios.vendored_library       = 'TesseractOCR/ios/lib/*.a'
 
-  s.platform                   = :macos, '10.11'
-
-  s.macos.source_files         = 'TesseractOCR/*.{h,m,mm}', 'TesseractOCR/macos/include/**/*.h'
-  s.macos.private_header_files = 'TesseractOCR/macos/include/**/*.h'
-  s.macos.frameworks           = 'AppKit', 'Foundation'
-
-  s.macos.deployment_target    = '10.11'
-  s.macos.vendored_library     = 'TesseractOCR/macos/lib/*.a'
-
   s.requires_arc               = true
 
   s.xcconfig                   = { 'OTHER_LDFLAGS' => '-lstdc++ -lz',
